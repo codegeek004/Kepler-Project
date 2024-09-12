@@ -1,0 +1,23 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .control-buttons {
+            margin-bottom: 30px;
+        }
+        .control-buttons form {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .status {
+            font-size: 1.2em;
+        }
+        .status p {
+            margin: 10px 0;
+        }
+        .detected {
+            color: red;
+            font-weight: bold;
+        }
+

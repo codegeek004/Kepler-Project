@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Toy Car Control</title>
+</head>
+<body>
+    <h1>Smart Toy Car Control</h1>
+
+    <form action="{{ url_for('control') }}" method="post">
+        <button type="submit" name="action" value="move_forward">Move Forward</button>
+        <button type="submit" name="action" value="move_backward">Move Backward</button>
+        <button type="submit" name="action" value="stop">Stop</button>
+    </form>
+
+    <h2>Sensor Status</h2>
+    {line_status} 
+
+    <form action="{{ url_for('cleanup') }}" method="get">
+        <button type="submit">Cleanup</button>
+    </form>
+</body>
+</html>
+
